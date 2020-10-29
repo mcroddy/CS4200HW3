@@ -1,1 +1,1 @@
-:- construction(XX,YY,bed), neighbors(XX,YY,tile,T_COUNT), T_COUNT != 8.
+:- construction(XX,YY,door), immediate_neighbors(XX,YY,wall, W_COUNT), W_COUNT != 2. 
