@@ -59,6 +59,8 @@ vertical(XX,YY,mid) :- terrain(XX,YY,bridge), vertical(XX,YY+1,_).
 :- vertical(X1,YY,start), vertical(X2,YY,start), X1-X2=1.
 :- construction(XX,YY,bed), neighbors(XX,YY,tile,T_COUNT), T_COUNT != 8.
 :- {terrain(XX,YY,grass)} max_width*max_height*1/2 .
+:- {terrain(XX,YY,door)} max_width*max_height*1/2 .
+:- {terrain(XX,YY,bed)} max_width*max_height*1/2 .
 
 :- {terrain(XX,YY,water)} max_width*max_height*1/6 .
 :- {terrain(XX,YY,bridge)} 5 .
